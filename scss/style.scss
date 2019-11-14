@@ -1,0 +1,165 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+
+}
+
+
+.img-opacity {
+	opacity: 0.8;
+}
+
+// start of navbar
+#nav-link-color:hover {
+	background-color: rgba(0,0,0,0.5);
+	color: white;
+}
+
+#navbar-title {
+	font-size: 1.5em;
+}
+
+.nav-link {
+	font-size: 1.35em;
+}
+
+#navbar-custom {
+
+}
+// end of navbar
+
+.con-land-title {
+	z-index: 1;
+}
+
+.con-land-title {
+	border: 2px solid white;
+	background-color: rgba(0,0,0,0.5);
+	padding: 20px;
+}
+
+.land-page-title {
+	color: white;
+	font-size: 5em;
+
+}
+
+#title-carousel {
+	position: absolute;
+  	right: 15%;
+  	left: 15%;
+  	z-index: 10;
+ 	padding-top: 20px;
+  	padding-bottom: 20px;
+  	color: #fff;
+  	text-align: center;
+  	top: 280px;
+  	border: 2px solid white;
+  	background-color: rgba(0,0,0,0.5);
+  	font-size: 5em;
+
+}
+
+#button-carousel {
+	position: absolute;
+  	right: 15%;
+  	left: 15%;
+  	z-index: 10;
+  	text-align: center;
+  	bottom: 40px;
+  	left: 590px;
+}
+
+#button-carousel > a {
+	color: black;
+}
+
+#first-row {
+	margin-top: 50px;
+}
+
+#second-row {
+	margin-top: 100px;
+	height: 100vh;
+}
+
+
+
+
+
+
+// footer {
+// 	position: fixed;
+// 	bottom: 0;
+// 	width: 100%;
+// }
+
+
+
+
+
+@media only screen and (max-width: 400px) {
+	
+	#title-carousel {
+		position: absolute;
+	  	right: 15%;
+	  	left: 15%;
+	  	z-index: 10;
+	 	padding-top: 20px;
+	  	padding-bottom: 20px;
+	  	color: #fff;
+	  	text-align: center;
+	  	top: 30px;
+	  	border: 2px solid white;
+	  	background-color: rgba(0,0,0,0.5);
+	  	font-size: 2em;
+
+	}
+
+	#button-carousel {
+		position: absolute;
+	  	right: 15%;
+	  	left: 15%;
+	  	z-index: 10;
+	  	text-align: center;
+	  	bottom: 40px;
+	  	font-size: 10px;
+	  	left: 145px;
+	}
+
+}
+
+
+
+@media only screen and (min-width: 401px) and (max-width: 768px) {
+	#title-carousel {
+   	 	top: 50px;
+	}
+
+	#button-carousel {
+		position: absolute;
+	  	right: 15%;
+	  	left: 15%;
+	  	z-index: 10;
+	  	text-align: center;
+	  	bottom: 40px;
+	  	left: 333px;
+
+	}
+
+	#car-item2 {
+		max-height: 431px;
+	}
+}
+
+
+
+@import "./_myfonts.scss";
+@import "./_mycolors.scss";
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+body {
+	
+	height: 100vh;
+}
