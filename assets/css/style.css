@@ -5,122 +5,6 @@
   box-sizing: border-box;
 }
 
-.img-opacity {
-  opacity: 0.8;
-}
-
-#nav-link-color:hover {
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-}
-
-#navbar-title {
-  font-size: 1.5em;
-}
-
-.nav-link {
-  font-size: 1.35em;
-}
-
-.con-land-title {
-  z-index: 1;
-}
-
-.con-land-title {
-  border: 2px solid white;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 20px;
-}
-
-.land-page-title {
-  color: white;
-  font-size: 5em;
-}
-
-#title-carousel {
-  position: absolute;
-  right: 15%;
-  left: 15%;
-  z-index: 10;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  color: #fff;
-  text-align: center;
-  top: 280px;
-  border: 2px solid white;
-  background-color: rgba(0, 0, 0, 0.5);
-  font-size: 5em;
-}
-
-#button-carousel {
-  position: absolute;
-  right: 15%;
-  left: 15%;
-  z-index: 10;
-  text-align: center;
-  bottom: 40px;
-  left: 590px;
-}
-
-#button-carousel > a {
-  color: black;
-}
-
-#first-row {
-  margin-top: 50px;
-}
-
-#second-row {
-  margin-top: 100px;
-  height: 100vh;
-}
-
-@media only screen and (max-width: 400px) {
-  #title-carousel {
-    position: absolute;
-    right: 15%;
-    left: 15%;
-    z-index: 10;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    color: #fff;
-    text-align: center;
-    top: 30px;
-    border: 2px solid white;
-    background-color: rgba(0, 0, 0, 0.5);
-    font-size: 2em;
-  }
-
-  #button-carousel {
-    position: absolute;
-    right: 15%;
-    left: 15%;
-    z-index: 10;
-    text-align: center;
-    bottom: 40px;
-    font-size: 10px;
-    left: 145px;
-  }
-}
-@media only screen and (min-width: 401px) and (max-width: 768px) {
-  #title-carousel {
-    top: 50px;
-  }
-
-  #button-carousel {
-    position: absolute;
-    right: 15%;
-    left: 15%;
-    z-index: 10;
-    text-align: center;
-    bottom: 40px;
-    left: 333px;
-  }
-
-  #car-item2 {
-    max-height: 431px;
-  }
-}
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -154,8 +38,8 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: "Montserrat", sans-serif;
-  --font-family-monospace: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 *,
@@ -177,7 +61,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -299,7 +183,7 @@ pre,
 code,
 kbd,
 samp {
-  font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-size: 1em;
 }
 
@@ -5408,7 +5292,7 @@ a.close.disabled {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -5510,7 +5394,7 @@ a.close.disabled {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: "Montserrat", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -9449,7 +9333,7 @@ button.bg-dark:focus {
   }
 }
 .text-monospace {
-  font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
 }
 
 .text-justify {
@@ -9778,7 +9662,341 @@ h3 {
   }
 }
 body {
-  height: 100vh;
+  background-color: #92dccd;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#nav-link-color:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+#nav-link-color {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+#navbar-title {
+  font-family: "Dancing Script", cursive;
+  font-size: 2em;
+  font-weight: bolder;
+}
+
+#image-size {
+  width: 100%;
+  max-height: 77vh;
+}
+
+.img-opacity {
+  opacity: 0.6;
+}
+
+#title-carousel {
+  position: absolute;
+  top: 39%;
+  left: 23%;
+  z-index: 1;
+  color: #fff;
+  font-family: "Dancing Script", cursive;
+  font-size: 6em;
+  border: 2px solid white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  font-weight: bold;
+}
+
+#button-carousel {
+  position: absolute;
+  top: 89%;
+  left: 46%;
+  z-index: 1;
+}
+
+#button-car-color {
+  color: black;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+#button-car-color:hover {
+  color: black;
+  text-decoration: none;
+}
+
+#cont-bg {
+  background-image: url("../../assets/images/home-bg.jpg");
+  background-image: linear-gradient(rgba(51, 51, 51, 0.7), rgba(51, 51, 51, 0.45)), url("../../assets/images/home-bg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#first-row {
+  margin-top: 100px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#card-john {
+  margin-top: 200px;
+  margin-bottom: 100px;
+}
+
+#trial {
+  background-color: white;
+  margin-top: 300px;
+}
+
+.jumbotron-custom {
+  border-radius: 20px;
+  background-color: #ffe9ca;
+  padding: 20px;
+}
+
+.jumbotron > h3 {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.fas {
+  text-decoration: none;
+  font-size: 30px;
+  color: #4a73b1;
+}
+
+#car-home-two {
+  border: 2px solid white;
+  padding: 10px;
+}
+
+#card-john {
+  border: 2px solid black;
+}
+
+#not-con-id {
+  margin-top: 50px;
+}
+
+#not-con-id-again {
+  padding: 10px;
+  width: 70%;
+  position: absolute;
+  left: 15%;
+}
+
+#about-con {
+  margin-bottom: 343px;
+}
+
+#about-row-home {
+  margin-top: 100px;
+}
+
+#about-card {
+  background-color: rgba(146, 220, 205, 0.6);
+  border: 2px solid white;
+}
+
+#about-text {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+}
+
+#about-title {
+  font-weight: bold;
+}
+
+#about-car {
+  border: 2px solid white;
+  padding: 20px;
+}
+
+#image-size-about {
+  max-height: 210px;
+}
+
+#gal-row {
+  padding: 0;
+  margin-top: 80px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 65%;
+}
+
+#gallery-title {
+  font-family: "Dancing Script", cursive;
+  font-size: 50px;
+  color: #fff;
+  font-weight: bolder;
+}
+
+#gal-jumbo {
+  background-color: rgba(146, 220, 205, 0.5);
+  border: 2px solid white;
+}
+
+#first-row-gal {
+  margin-top: 50px;
+}
+
+#sec-row-gal {
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+
+.card-img-caption {
+  border-top-left-radius: calc(.25rem - 1px);
+  border-top-right-radius: calc(.25rem - 1px);
+  display: none;
+}
+
+.card-img-caption .card-img-top {
+  z-index: 0;
+}
+
+.card-img-caption .card-text {
+  text-align: center;
+  width: 100%;
+  margin: 33% 0;
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 30px;
+  font-family: "Dancing Script", cursive;
+}
+
+.card:hover > .card-img-caption {
+  display: block;
+}
+
+#card-size {
+  max-height: 260px;
+}
+
+#margin-foot {
+  margin-top: 85px;
+}
+
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+@media only screen and (max-width: 400px) {
+  #title-carousel {
+    top: 15%;
+    left: 21%;
+    font-size: 1.5em;
+  }
+
+  #button-carousel {
+    top: 60%;
+    left: 35%;
+  }
+
+  #about-card {
+    margin: 0;
+  }
+
+  .card-text {
+    font-size: 0.8em;
+  }
+
+  .card-title {
+    font-size: 1em;
+  }
+
+  #about-row-home {
+    margin-top: 10px;
+  }
+
+  #about-car {
+    max-width: 200px;
+    margin-left: 80px;
+    margin-top: 5px;
+  }
+
+  #gallery-title {
+    font-family: "Dancing Script", cursive;
+    font-size: 2em;
+    color: #fff;
+    font-weight: bolder;
+  }
+
+  .not-con {
+    font-size: 20px;
+  }
+
+  #first-row {
+    margin: 0;
+  }
+
+  #card-john {
+    margin: 20px;
+  }
+
+  #image-size {
+    max-height: 31vh;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 768px) {
+  #title-carousel {
+    top: 35%;
+    left: 20%;
+    font-size: 4em;
+  }
+
+  #button-carousel {
+    top: 80%;
+    left: 43%;
+  }
+
+  #image-size {
+    max-height: 42vh;
+  }
+}
+@media only screen and (min-width: 411px) and (max-width: 500px) {
+  #title-carousel {
+    top: 25%;
+    left: 18%;
+    font-size: 2em;
+  }
+
+  #button-carousel {
+    top: 65%;
+    left: 38%;
+  }
+
+  #image-size {
+    max-height: 28vh;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  #title-carousel {
+    top: 35%;
+    left: 20%;
+    font-size: 5em;
+  }
+
+  #button-carousel {
+    top: 85%;
+    left: 45%;
+  }
+
+  #image-size {
+    max-height: 42vh;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
