@@ -359,6 +359,16 @@ html {
 	text-align: center;
 }
 
+#book-footer {
+	margin-top: 210px;
+}
+
+
+#book-con {
+	height: 81vh;
+}
+
+
 
 // end of book
 
@@ -381,6 +391,8 @@ html {
 .foot-icon {
 	padding-bottom: 20px;
 }
+
+
 
 @media only screen and (max-width: 400px) {
 	#title-carousel {
@@ -409,9 +421,10 @@ html {
 	}
 
 	#about-car {
-		max-width: 320px;
+		max-width: 230px;
 		margin-top: 20px;
-		margin-left: 20px;
+		margin-left: 40px;
+		padding: 10px;
 	}
 
 	#gallery-title {
@@ -439,7 +452,7 @@ html {
 	}
 
 	.about-img-h {
-		max-height: 24vh;
+		max-height: 20vh;
 	}
 
 	.form-con {
