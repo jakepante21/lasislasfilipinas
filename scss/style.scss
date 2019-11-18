@@ -7,6 +7,7 @@
 
 
 
+
 // @import "./_myfonts.scss";
 @import "./_mycolors.scss";
 @import "../node_modules/bootstrap/scss/bootstrap";
@@ -46,6 +47,7 @@ html {
 // end of nav
 
 
+
 // start of carousel
 #image-size {
 	width: 100%;
@@ -53,14 +55,14 @@ html {
 }
 
 .img-opacity {
-	opacity: 0.6;
+	opacity: 0.8;
 }
 
 #title-carousel {
 	position: absolute;
 	top: 39%;
 	left: 23%;
-	z-index: 1;
+	z-index: 100;
 	color: #fff;
 	font-family: 'Dancing Script', cursive;
 	font-size: 6em;
@@ -85,6 +87,13 @@ html {
 	color: black;
 	text-decoration: none;
 
+}
+
+#index-foot {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
 }
 
 // end of carousel
@@ -132,6 +141,9 @@ html {
 	background-color: #ffe9ca;
 	padding: 20px;
 }
+
+
+
 .jumbotron > h3 {
 	font-family: 'Nunito Sans', sans-serif;
 }
@@ -146,6 +158,11 @@ html {
 #car-home-two {
 	border: 2px solid white;
 	padding: 10px;
+	
+}
+
+.home-img-h {
+	max-height: 41vh;
 }
 
 #card-john {
@@ -175,7 +192,7 @@ html {
 // start of about
 
 #about-con {
-	margin-bottom: 343px;
+	margin-bottom: 281px;
 }
 
 #about-row-home{
@@ -200,6 +217,10 @@ html {
 #about-car {
 	border: 2px solid white;
 	padding: 20px;
+}
+
+.about-img-h {
+	max-height: 35vh;
 }
 
 #image-size-about {
@@ -272,14 +293,30 @@ html {
 	max-height: 260px;
 }
 
+#john-size1 {
+	max-height: 43vh;
+}
+
 
 // end of gallery
 
 
 // start of contact us
 
+.jumbotron-contact {
+	background-color: rgba(146,220,205,0.5);
+	border: 2px solid white;
+	margin-top: 20px;
+}
+
+.contact-title {
+	font-family: 'Nunito Sans', sans-serif;
+	color: white;
+	font-size: 35px;
+}
+
 #margin-foot {
-	margin-top: 85px;
+	margin-top: 89px;
 }
 
 .map-responsive{
@@ -298,6 +335,52 @@ html {
 
 // end of contact us
 
+// start of book
+
+.form-con {
+	border: 2px solid white;
+	background-color: rgba(146,220,205,0.5);
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 600px;
+	height: 70vh;
+	margin-bottom: 48px;
+	padding: 20px;
+}
+
+.book-title {
+	font-size: 50px;
+	color: white;
+	font-family: 'Nunito Sans', sans-serif;
+	background-color: rgba(0,0,0,0.5);
+	height: 70px;
+	line-height: 70px;
+	text-align: center;
+}
+
+
+// end of book
+
+.social-links {
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
+}
+
+.socials-icon {
+	margin: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.foot-text {
+	padding-top: 20px;
+}
+
+.foot-icon {
+	padding-bottom: 20px;
+}
 
 @media only screen and (max-width: 400px) {
 	#title-carousel {
@@ -326,9 +409,9 @@ html {
 	}
 
 	#about-car {
-		max-width: 200px;
-		margin-left: 80px;
-		margin-top: 5px;
+		max-width: 320px;
+		margin-top: 20px;
+		margin-left: 20px;
 	}
 
 	#gallery-title {
@@ -342,24 +425,47 @@ html {
 		font-size: 20px;
 	}
 
-
-
 	#first-row {
 		margin:0;
+		margin-top: 20px;
 	}
 
 	#card-john{
 		margin: 20px;
 	}
 
-	#about-car {
-
-	}
-
 	#image-size {
 		max-height: 31vh;
 	}
-	
+
+	.about-img-h {
+		max-height: 24vh;
+	}
+
+	.form-con {
+	border: 2px solid white;
+	background-color: rgba(146,220,205,0.5);
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 300px;
+	height: 110vh;
+	margin-bottom: 48px;
+	padding: 20px;
+}
+
+	.book-title {
+	font-size: 30px;
+	color: white;
+	font-family: 'Nunito Sans', sans-serif;
+	background-color: rgba(0,0,0,0.5);
+	height: 70px;
+	line-height: 70px;
+	text-align: center;
+	}
+
+
+
 }
 
 

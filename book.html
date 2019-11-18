@@ -20,10 +20,11 @@
 	 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
 
-	<title>LIP | Contact Us</title>
+	<title>LIP | Book a tour</title>
 </head>
 <body>
-	<div id="cont-bg" class="size-size">
+	<div id="cont-bg">
+		<!-- start of nav -->
 		<nav id ="navbar-custom" class="navbar navbar-expand-lg navbar-light bg-primary py-3 sticky-top">
 			<a id="navbar-title" class="navbar-brand" href="index.html">Las Islas Filipinas
 			</a>
@@ -36,7 +37,7 @@
 					<li class="nav-item">
 						<a id="nav-link-color" class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
 					</li>
-					<li class="nav-item active">
+					<li class="nav-item">
 						<a id="nav-link-color" class="nav-link" href="about.html">About Us</a>
 					</li>
 					<li class="nav-item">
@@ -48,84 +49,60 @@
 				</ul>
 			</div>
 		</nav>
+		<!-- end of nav -->
 
 
 
-		<div class="container animated fadeInDown">
-				<div class="row">
-					<div class="col-12">
-						<div class="jumbotron jumbotron-contact">
-							<h2 class="text-center contact-title">Contact Us Here!</h2>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-md-12">
+					<form class="form-con">
+						<h2 class="book-title">Book A Tour!</h1>
+						<div class="form-group">
+							<label for="name">Name:</label>
+							<input type="text" id="name" class="form-control" name="">
 						</div>
-					</div>
-				</div>
-		</div>
-
-			<div id="margin-bottom" class="container">
-				<div class="row">
-					<div class="col-12 col-md-6">
-						<form>
-							<div class="form-group">
-								<label for="email">Email:</label>
-								<input type="email" id="email" name="" class="form-control">
-							</div>
-							<div class="form-group">
-								<label for="message">Message</label>
-								<textarea name="message" id="message" class="form-control" cols="30" rows="10">
-									
-								</textarea>
-							</div>
-
-							<button class="btn btn-primary">Submit Message</button>
-						</form>
-					</div>
-					<div class="col-12 col-md-6">
-						<div class="map-responsive">
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d250476.7443748145!2d119.26379240752853!3d11.209882088906383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33b65515ef5c9e0f%3A0xfc4e665b599b0455!2sEl%20Nido%2C%20Palawan!5e0!3m2!1sen!2sph!4v1573803165077!5m2!1sen!2sph" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="">
-							</iframe>
+						<div class="form-group">
+							<label for="email">Email: </label>
+							<input type="email" id="email" class="form-control" name="">
 						</div>
-					</div>
+						<div class="form-group">
+							<label for="date">Date of Tour</label>
+							<input type="date" id="date" class="form-control" name="">
+						</div>
+						<div class="form-group">
+							<label for="mess">Message/Other Details</label>
+							<textarea class="form-control" cols="20" rows="5"></textarea>
+						</div>
+						<div class="form-group">
+							<label>Pick a Package: </label>
+							<input type="radio" name="decision" id="two">
+							<label for="two">For Two People</label>
+							<input type="radio" name="decision" id="more">
+							<label for="more">More than two People</label>
+						</div>
+						<button class="btn btn-primary">Submit</button>
+					</form>
 				</div>
 			</div>
+		</div>
 
-			
-
-			<footer id="margin-foot" class="bg-primary">
-				<div class="container">
-					<div class="row">
-						<div class="col-12">
-							<p class="mb-0 text-center foot-text">
-								All rights reserved &copy; 2019 | Jake Pante
-							</p>
-						</div>
-
-					</div>
-
-					<div class="row m-0">
-						<div class="col-12">
-							<div class="socials-icon text-center foot-icon">
-								<a href="https://www.facebook.com" target="_blank">
-									<img src="./assets/images/fb.png" alt="social-facebook" class="social-links">
-								</a>
-								<a href="https://www.instagram.com" target="_blank">
-									<img src="./assets/images/ig.png" alt="social-instagram" class="social-links">
-								</a>
-								<a href="https://www.twitter.com" target="_blank">
-									<img src="./assets/images/twt.png" alt="social-twitter" class="social-links">
-								</a>
-								<a href="https://www.youtube.com" target="_blank">
-									<img src="./assets/images/ytb.png" alt="social-youtube" class="social-links">
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</footer>
-	</div>
 		
+		
+	<footer class="bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="mb-0 text-center py-5">
+                        All rights reserved &copy; 2019 | Jake Pante
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-	
-
+   </div> 
 
 
 
