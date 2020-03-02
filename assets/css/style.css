@@ -9886,6 +9886,27 @@ html {
   scroll-behavior: smooth;
 }
 
+.header {
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  z-index: 100;
+  border-bottom: 2px solid black;
+}
+.header .navbar-brand {
+  font-family: "Dancing Script", cursive;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+footer {
+  position: absolute;
+  right: 0;
+  left: 0;
+  padding: 1em 0;
+  border-top: 2px solid black;
+}
+
 .hero {
   width: 100vw;
   height: 100vh;
@@ -9896,186 +9917,101 @@ html {
   opacity: 0.8;
 }
 
-#title-carousel {
+.title-border-custom {
   position: absolute;
-  top: 39%;
-  left: 23%;
-  z-index: 100;
-  color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 2em 1em;
+  z-index: 2;
+  color: white;
+  text-align: center;
+}
+
+.title-carousel-custom {
   font-family: "Dancing Script", cursive;
-  font-size: 6rem;
-  border: 2px solid white;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 20px;
+  font-size: 2em;
   font-weight: bold;
 }
 
-#button-carousel {
-  background-color: #C2BC7A;
-  border: 3px solid #362F18;
-  position: absolute;
-  top: 89%;
-  left: 46%;
-  z-index: 1;
-}
-
-#button-car-color {
-  color: black;
-  font-family: "Nunito Sans", sans-serif;
-}
-
-#button-car-color:hover {
-  color: black;
-  text-decoration: none;
-}
-
-.header {
-  position: fixed;
-  top: 0px;
-  width: 100vw;
-  z-index: 5;
-  border-bottom: 3px solid black;
-}
-
-#nav-title {
-  font-family: "Dancing Script", cursive;
-  font-size: 2rem;
+.btn-custom {
+  border: none;
   font-weight: bold;
-}
-
-#nav-text:hover {
-  color: white;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.footer-text {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  color: black;
-}
-
-.foot {
-  border-top: 3px solid black;
-}
-
-.text {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  color: white;
-}
-
-.section-first {
-  background-color: white;
-}
-
-.jakejake {
-  min-height: 100vh;
-}
-
-.section-second {
-  background-color: rgba(0, 0, 0, 0.3);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='100' y1='33' x2='100' y2='-3'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='100' y1='135' x2='100' y2='97'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%23b0b0b0' fill-opacity='0.05'%3E%3Crect x='100' width='100' height='100'/%3E%3Crect y='100' width='100' height='100'/%3E%3C/g%3E%3Cg fill-opacity='0.05'%3E%3Cpolygon fill='url(%23a)' points='100 30 0 0 200 0'/%3E%3Cpolygon fill='url(%23b)' points='100 100 0 130 0 100 200 100 200 130'/%3E%3C/g%3E%3C/svg%3E");
+  font-size: 0.8em;
 }
 
 .cont {
-  background-color: #cfcfcf;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='100' y1='33' x2='100' y2='-3'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='100' y1='135' x2='100' y2='97'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%23b0b0b0' fill-opacity='0.05'%3E%3Crect x='100' width='100' height='100'/%3E%3Crect y='100' width='100' height='100'/%3E%3C/g%3E%3Cg fill-opacity='0.05'%3E%3Cpolygon fill='url(%23a)' points='100 30 0 0 200 0'/%3E%3Cpolygon fill='url(%23b)' points='100 100 0 130 0 100 200 100 200 130'/%3E%3C/g%3E%3C/svg%3E");
+  margin-top: 3em;
 }
 
-.title-second {
-  font-family: "Dancing Script", cursive;
-  font-size: 2rem;
+.home-title {
+  position: absolute;
+  padding: 2em;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -55%);
+  z-index: 2;
+}
+.home-title h1 {
+  color: white;
+  text-transform: uppercase;
+}
+
+.home-second-title {
+  margin: 0;
   font-weight: bold;
-  color: black;
+  color: white;
+  padding: 0.5em 0;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
-.title {
-  font-family: "Dancing Script", cursive;
-  font-size: 2rem;
-  font-weight: bold;
+.btn-down {
+  font-size: 1.5em;
+}
+.btn-down .button-icon {
+  margin-bottom: 0.5em;
 }
 
-.semi-header {
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-#down-btn {
-  color: black;
-}
-
-.padding-row {
-  padding-left: 1%;
-  padding-right: 1%;
-  padding-bottom: 1%;
+.short-description {
+  text-align: justify;
 }
 
 .parags {
   text-align: justify;
 }
 
-.home-padding-row {
-  padding-bottom: 10%;
+.most-visited {
+  font-weight: bold;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 0.5em 0.5em;
 }
 
 .card {
-  border: 1px solid black;
+  margin: 0.5em 0;
 }
 
-.gal-header {
-  background-color: #C2BC7A;
-  border-bottom: 3px solid black;
-  border-top: 3px solid black;
-  padding-left: 2%;
-  padding-right: 2%;
-  padding-bottom: 2%;
-  padding-top: 2%;
-  font-family: "Dancing Script", cursive;
-  font-weight: bold;
-}
-
-.display-block {
-  display: inline-block;
-}
-
-.jumbotron-contact {
-  margin-top: 100px;
-}
-
-.map-responsive {
-  overflow: hidden;
-  padding-bottom: 56.25%;
-  position: relative;
-  height: 0;
-}
-
-.map-responsive iframe {
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-}
-
-@media only screen and (max-width: 400px) {
-  #title-carousel {
-    top: 15%;
-    left: 21%;
-    font-size: 1.5em;
+@media only screen and (min-width: 730px) {
+  .home-title {
+    padding: 4em;
   }
-
-  #button-carousel {
-    top: 60%;
-    left: 35%;
+  .home-title h1 {
+    font-size: 4em;
   }
-
-  .image-car {
+}
+@media only screen and (min-width: 992px) {
+  .hero {
     width: 100vw;
-    height: 100vh;
-    object-fit: cover;
+    height: 100%;
   }
 
-  .gal-cont {
-    margin-top: 20%;
+  .home-title {
+    padding: 2em;
+  }
+  .home-title h1 {
+    font-size: 2em;
   }
 }
 
