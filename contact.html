@@ -7,8 +7,9 @@
 
 	<!-- Bootstrap CSS -->
 	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
-	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="./assets/css/animate.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 
 	<!-- fav icon -->
 	<link rel="icon" type="image/gif/png" href="./assets/images/phicon.png">
@@ -24,8 +25,8 @@
 </head>
 <body>
 	<!-- start of navigation bar -->
-	<nav class="navbar navbar-expand-lg bg-primary navbar-light header">
-		<a class="navbar-brand" href="./index.html" id="nav-title">Las Islas Filipinas</a>
+	<nav class="navbar navbar-expand-lg navbar-dark header" id="navbar">
+		<a id="contact" class="navbar-brand" href="./index.html">Las Islas Filipinas</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
@@ -47,49 +48,53 @@
 		</div>
 	</nav>
 	<!-- end of navigation -->
-
-<div class="jakejake">
-
-	<div class="container animated fadeInDown">
-		<div class="row">
-			<div class="col-12">
-				<div class="jumbotron jumbotron-contact">
-					<h2 class="text-center contact-title">Contact Us Here!</h2>
-				</div>
+	<!-- start of header -->
+	<div class="home-video-container">
+		<div class="video">
+			<div class="overlay">
+			
 			</div>
-		</div>
+			<div class="video-content">
+				<h1>Las Islas Filipinas</h1>
+			</div>
+			<video class="home-video" autoPlay loop muted>
+				<source src="./assets/images/index-video.mp4" type="video/mp4">
+			</video>
+		</div>	
 	</div>
-
-	<div id="margin-bottom" class="container">
-		<div class="row">
-			<div class="col-12 col-md-6">
+	<!-- end of header -->
+	<!-- start of first section -->
+	<section>
+		<div class="section section-first m-top">
+			<div class="first-contact-title">
+				<h2>Contact Us</h2>
+				<p>If you want to get in touch with us, just send your message here!</p>
+			</div>
+			<div class="first-contact-section">
 				<form>
+					<div class="form-group">
+						<label for="email">Name:</label>
+						<input type="email" id="email" name="" class="form-control">
+					</div>
 					<div class="form-group">
 						<label for="email">Email:</label>
 						<input type="email" id="email" name="" class="form-control">
 					</div>
 					<div class="form-group">
 						<label for="message">Message</label>
-						<textarea name="message" id="message" class="form-control" cols="30" rows="10">
-							
+						<textarea name="message" id="message" class="form-control" cols="10" rows="5">
+
 						</textarea>
 					</div>
 
 					<button class="btn btn-primary">Submit Message</button>
+
 				</form>
 			</div>
-			<div class="col-12 col-md-6">
-				<div class="map-responsive">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d250476.7443748145!2d119.26379240752853!3d11.209882088906383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33b65515ef5c9e0f%3A0xfc4e665b599b0455!2sEl%20Nido%2C%20Palawan!5e0!3m2!1sen!2sph!4v1573803165077!5m2!1sen!2sph" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="">
-					</iframe>
-				</div>
-			</div>
 		</div>
-	</div>
-
-</div>
-
-			<!-- start of footer -->
+	</section>
+	<!-- end of first section -->
+	<!-- start of footer -->
 	<footer class="bg-primary foot">
 		<div class="container">
 			<div class="row">
@@ -135,5 +140,13 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		
+		$(window).scroll(function() {
+			$('#navbar').toggleClass('navbar-scrolled', $(this).scrollTop() > 400)
+		})
+
+	</script>
+	<script type="text/javascript" src="./assets/js/app.js"></script>
 </body>
 </html>

@@ -6,27 +6,40 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<!-- Bootstrap CSS -->
-	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
-	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+	
+
+	<!-- Add the slick-theme.css if you want default styling -->
+	<link rel="stylesheet" type="text/css" href="./assets/css/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="./assets/css/slick-theme.css"/>
+	<!-- Add the slick-theme.css if you want default styling -->
+
 	<link rel="stylesheet" type="text/css" href="./assets/css/animate.css">
+
+	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
+	<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+  />
 
 	<!-- fav icon -->
 	<link rel="icon" type="image/gif/png" href="./assets/images/phicon.png">
 	
 	<!-- google fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Archivo+Narrow|Dancing+Script|Pacifico|Roboto&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Dancing+Script|Montserrat|Pacifico|Roboto&display=swap" rel="stylesheet">
 
 	<!-- font awesome icons -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-
 
 	<title>LIP | Home</title>
 </head>
 <body>
 
 	<!-- start of navigation bar -->
-	<nav class="navbar navbar-expand-lg bg-primary navbar-light header">
-		<a class="navbar-brand" href="./index.html">Las Islas Filipinas</a>
+	<nav class="navbar navbar-expand-lg navbar-dark header" id="navbar">
+		<a id="home" class="navbar-brand" href="./index.html">Las Islas Filipinas</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
@@ -48,11 +61,11 @@
 		</div>
 	</nav>
 	<!-- end of navigation -->
-	<!-- start of carousel -->
-	<div class="p-lg-0">
+	<!-- start of video header -->
+	<div class="home-video-container">
 		<!-- start of section -->
 		<!-- start of body carousel -->
-		<div id="carouselExampleIndicators" class="carousel slide carousel-fade carousel-pos" data-ride="carousel" data-interval="2000" data-pause="false">
+		<!-- <div id="carouselExampleIndicators" class="carousel slide carousel-fade carousel-pos" data-ride="carousel" data-interval="2000" data-pause="false">
 			<div class="home-title">
 				<h1>Home</h1>
 			</div>
@@ -72,92 +85,109 @@
 					<img src="./assets/images/home_new_1.jpg" class="img-fluid home-carousel hero" alt="...">
 				</div>
 			</div>
+		</div> -->
+		
+		
+		<div class="video">
+			<div class="overlay">
+			
+			</div>
+			<div class="video-content">
+				<h1>Las Islas Filipinas</h1>
+			</div>
+			<video class="home-video" autoPlay loop muted>
+				<source src="./assets/images/index-video2.mp4" type="video/mp4">
+			</video>
 		</div>
-		<!-- end of carousel -->
+		
+		
 	</div>
-	<!-- end of carousel -->
+	<!-- end of video header -->
 	<!-- start of first section -->
-	<section class="section section-first mb-2">
-		<div class="container px-3 p-sm-0 cont">
-			<div class="row">
-				<div class="col-12 text-center mb-4">
-					<h2 class="home-second-title">Las Islas Filipinas</h2>
-					<a href="#home" class="btn-down"><i class="fas fa-chevron-down button-icon"></i></a>
-					<p class="text short-description">We feature the best tourist spots here in the Philippines. From land to sea, from mountains to ocean. We'll make sure you'll enjoy every bit of your stay in our beautiful country, the Philippines.</p>
-				</div>
-			</div>
-			<div class="row mb-2">
-				<div class="col-12 col-md-8">
-					<p class="parags">
-						The Philippines, officially the Republic of the Philippines (Filipino: Republika ng Pilipinas), is an archipelagic country in Southeast Asia. Situated in the western Pacific Ocean, it consists of about 7,641 islands that are broadly categorized under three main geographical divisions from north to south: Luzon, Visayas and Mindanao. 
-					</p>
-				</div>
-				<div class="col-12 col-md-4 home-pad">
-					<img src="./assets/images/home3.jpg" class="img-fluid">
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-12 col-md-4 mb-4">
-					<img src="./assets/images/home3.jpg" class="img-fluid">
-				</div>
-				<div class="col-12 col-md-8">
-					<p class="parags">
-						The capital city of the Philippines is Manila and the most populous city is Quezon City, both part of Metro Manila.Bounded by the South China Sea on the west, the Philippine Sea on the east and the Celebes Sea on the southwest, the Philippines shares maritime borders with Taiwan to the north, Japan to the northeast, Vietnam to the west, Palau to the east, and Malaysia and Indonesia to the south.
-					</p>
-				</div>
-			</div>
+	<section class="section section-first">
+		<div class="first-title">
+			<h2>Explore The Philippines</h2>
 		</div>
+		<div class="first-home-section">
+			<div class="image-one first-flex">
+				<img src="./assets/images/image1.jpg">
+			</div>
+			<div class="image-two first-flex">
+				<img src="./assets/images/image2.jpg">
+			</div>
+			<div class="image-text-container">
+				<p>
+					The Philippines is an archipelagic country in Southeast Asia. Situated in the western Pacific Ocean, it consists of about 7,641 islands that are broadly categorized under three main geographical divisions from north to south: Luzon, Visayas and Mindanao
+				</p>
+			</div>
+			<!-- <div class="overlay-2">
+					
+			</div>
+			<div class="image-container-three">
+				<img src="./assets/images/ph-map.png">
+			</div>
+ -->		</div>
 	</section>
 	<!-- end of first section -->
-	<!-- start of second section -->
+	<!-- start of second section-->
 	<section class="section section-second">
-		<div class="container px-3 p-sm-0 cont-second">
-			<div class="row">
-				<div class="col-12 text-center mb-4">
-					<h2 class="most-visited">Most Visited</h2>
-				</div>
+		<div class="second-home-section">
+			<div class="second-image-one second-flex">
+				<img src="./assets/images/image7.jpg">
 			</div>
-			<div class="row home-padding-row">
-				<div class="col-12 col-md-4">
-					<a href="" id="trial-but" data-toggle="modal" data-target="#exampleModal">
-						<div class="card">
-							<div class="card-img-caption">
-								<p class="card-text">
-									
-								</p>
-							</div>
-							<img src="./assets/images/boracay.jpg" id="card-size" class="card-img-top" alt="...">
-						</div>
-					</a>
-				</div>
-				<div class="col-12 col-md-4">
-					<a href="" id="trial-but" data-toggle="modal" data-target="#exampleModal">
-						<div class="card">
-							<div class="card-img-caption">
-								<p class="card-text">
-									
-								</p>
-							</div>
-							<img src="./assets/images/boracay.jpg" id="card-size" class="card-img-top" alt="...">
-						</div>
-					</a>
-				</div>
-				<div class="col-12 col-md-4">
-					<a href="" id="trial-but" data-toggle="modal" data-target="#exampleModal">
-						<div class="card">
-							<div class="card-img-caption">
-								<p class="card-text">
-									
-								</p>
-							</div>
-							<img src="./assets/images/boracay.jpg" id="card-size" class="card-img-top" alt="...">
-						</div>
-					</a>
-				</div>
+			<div class="image-one-caption">
+				<p>
+					One of the Philippines best assets is its 7,000 islands, edged by white sand buffering turquoise waters filled with some of the world's most diverse marine life. And most of them are relatively unexplored.
+				</p>
+			</div>
+			<div class="second-image-two second-flex">
+				<img src="./assets/images/image8.jpg">
+			</div>
+			<div class="image-two-caption">
+				<p>
+					Philippines' Mountains are underrated.The mountains in the Philippines is varied, and there is definitely a trail for everybody. One of the most definitive experiences provided by mountain hiking and climbing is the views from high above.
+				</p>
+			</div>
+			<div class="second-image-three second-flex">
+				<!-- <img src="./assets/images/about1.jpg"> -->
+			</div>
+			<div class="second-caption">
+				<p>
+					Our website's purpose is to promote the beauty of our country, the Philippines. Featuring different beautiful tourist attractions/places that the country can offer.
+				</p>
 			</div>
 		</div>
 	</section>
 	<!-- end of second section -->
+	<!-- start of third section -->
+	<section>
+		<div class="responsive">
+			<!-- <h3>Philippine Beaches</h3>
+			<button id="slider-button-left"><i class="fas fa-chevron-left i-left"></i></button> -->
+			<!-- <div class="image-slider-container"> -->
+				<div class="items">
+					<img src="./assets/images/gallery4.jpg" id="last-clone" class="slider-image hvr-grow">
+				</div>
+				<div class="items">
+					<img src="./assets/images/gallery1.jpg" class="slider-image hvr-grow">
+				</div>
+				<div class="items">
+					<img src="./assets/images/gallery2.jpg" class="slider-image hvr-grow">	
+				</div>
+				<div class="items">
+					<img src="./assets/images/gallery3.jpg" class="slider-image hvr-grow">
+				</div>
+				<div class="items">
+					<img src="./assets/images/gallery4.jpg" class="slider-image hvr-grow">
+				</div>
+				<div class="items">
+					<img src="./assets/images/gallery1.jpg" id="first-clone" class="slider-image hvr-grow">
+				</div>
+			<!-- </div>
+			<button id="slider-button-right"><i class="fas fa-chevron-right i-right"></i></button> -->
+		</div>
+	</section>
+	<!-- end of third section -->
 	<!-- start of footer -->
 	<footer class="bg-primary foot">
 		<div class="container">
@@ -193,8 +223,67 @@
 	<!-- end of footer -->
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="./assets/js/slick.js"></script>
+	<script type="text/javascript">
+		
+		$(window).scroll(function() {
+			$('#navbar').toggleClass('navbar-scrolled', $(this).scrollTop() > 400)
+		})
+
+		// $(window).scroll(function(){
+		// 	$(".section-first").toggleClass("scroll-effect", $(this).scrollTop() > 600);
+		// })
+
+		$(document).ready(function(){
+			$('.responsive').slick({
+				dots: true,
+				infinite: true,
+				speed: 300,
+				slidesToShow: 4,
+				slidesToScroll: 4,
+				arrows: false,
+				autoplay: true,
+				responsive: [
+				{
+					breakpoint: 1024,
+					settings: {
+						slidesToShow: 3,
+						slidesToScroll: 3,
+						infinite: true,
+						dots: true
+					}
+				},
+				{
+					breakpoint: 600,
+					settings: {
+						slidesToShow: 2,
+						slidesToScroll: 2
+					}
+				},
+				{
+					breakpoint: 480,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1
+					}
+				}
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+    ]
+});
+		});
+		
+
+		
+
+	</script>
+	<script type="text/javascript" src="./assets/js/app.js"></script>
 </body>
 </html>
