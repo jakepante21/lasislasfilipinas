@@ -10141,6 +10141,18 @@ video {
   font-family: "Montserrat", sans-serif;
   text-align: justify;
 }
+.second-home-section .image-one-caption,
+.second-home-section .image-two-caption {
+  width: 100%;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.second-home-section .image-one-caption p,
+.second-home-section .image-two-caption p {
+  color: #2F4F4F;
+  font-family: "Montserrat", sans-serif;
+  text-align: justify;
+}
 
 .photo-featured-container {
   width: 100%;
@@ -10424,7 +10436,29 @@ video {
   object-fit: cover;
 }
 
+#custom-modal-content {
+  width: 95vw;
+}
+
+#custom-modal {
+  width: 95vw;
+}
+#custom-modal img {
+  width: 100%;
+}
+
 @media only screen and (min-width: 730px) {
+  #custom-modal-content {
+    width: 100%;
+  }
+
+  #custom-modal {
+    width: 100%;
+  }
+  #custom-modal img {
+    width: 100%;
+  }
+
   .section-first {
     width: 100vw;
     height: 100%;
@@ -10554,6 +10588,10 @@ video {
   }
 }
 @media only screen and (min-width: 992px) {
+  .video-content h1 {
+    font-size: 5em;
+  }
+
   .home-video {
     width: 100%;
     height: 70vh;

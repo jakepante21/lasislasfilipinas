@@ -312,6 +312,18 @@ video{
 			text-align: justify;
 		}
 	}
+
+	.image-one-caption,
+	.image-two-caption{
+		width: 100%;
+		padding-left: 1em;
+		padding-right: 1em;
+		p{
+			color: #2F4F4F;
+			font-family: $font-third; 
+			text-align: justify;
+		}
+	}
 }
 
 
@@ -638,10 +650,34 @@ video{
 
 }
 
+#custom-modal-content{
+	width: 95vw;
+}
+
+#custom-modal{
+	width: 95vw;
+
+	img{
+		width: 100%;
+	}
+}
+
 
 // media queries
 
 @media only screen and (min-width: 730px){
+
+	#custom-modal-content{
+		width: 100%;
+	}
+
+	#custom-modal{
+		width: 100%;
+
+		img{
+			width: 100%;
+		}
+	}
 
 	.section-first{
 		width: 100vw;
@@ -786,6 +822,14 @@ video{
 	// 	width: 100vw;
 	// 	height: 100%;
 	// }
+
+	// INDEX
+
+	.video-content{
+		h1{
+			font-size: 5em;
+		}
+	}
 
 	.home-video{
 		width: 100%;
